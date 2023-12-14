@@ -12,6 +12,11 @@
       "addLabels": [
         "renovate_publish"
       ]
+    },
+    {
+      "matchPackageNames": ["cilium-cli"],
+      "matchUpdateTypes": ["minor"],
+      "enabled": false
     }
   ]
 }
