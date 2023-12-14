@@ -36,4 +36,4 @@ jobs:
         with:
           strategy: regex
           root: "Dockerfile"
-          regex_pattern: "HCLOUD_VERSION=(v\\d+\\.\\d+\\.\\d+)"
+          regex_pattern: "CLI_VERSION=(v\\d+\\.\\d+\\.\\d+)"
