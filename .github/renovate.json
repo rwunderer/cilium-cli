@@ -9,6 +9,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["cilium-cli"],
+      "automerge": true,
       "addLabels": [
         "renovate_publish"
       ]
