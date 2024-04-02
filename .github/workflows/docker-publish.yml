@@ -24,9 +24,22 @@ jobs:
       # with sigstore/fulcio when running outside of PRs.
       id-token: write
 
+    strategy:
+      matrix:
+        image:
+        - minimal
+        - debug
+
+        include:
+        - suffix: -minimal
+          target: cilium-cli-minimal
+
+        - suffix: -debug
+          target: cilium-cli-debug
+
     uses: rwunderer/renovate/.github/workflows/reusable-docker-publish.yml@main
     with:
-      minimal-image: cilium-cli-minimal
-      debug-image: cilium-cli-debug
+      suffix: ${{ matrix.suffix }}
+      target: ${{ matrix.target }}
       docker-description: Minimal Docker image with cilium cli utility
     secrets: inherit
