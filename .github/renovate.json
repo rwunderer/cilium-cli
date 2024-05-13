@@ -4,20 +4,25 @@
     "github>rwunderer/renovate",
     "github>rwunderer/renovate:container-tools",
     "github>rwunderer/renovate:cosign-version",
-    "regexManagers:dockerfileVersions"
+    "customManagers:dockerfileVersions"
   ],
-
   "packageRules": [
     {
-      "matchPackageNames": ["cilium-cli"],
+      "matchPackageNames": [
+        "cilium-cli"
+      ],
       "automerge": true,
       "addLabels": [
         "renovate_publish"
       ]
     },
     {
-      "matchPackageNames": ["cilium-cli"],
-      "matchUpdateTypes": ["minor"],
+      "matchPackageNames": [
+        "cilium-cli"
+      ],
+      "matchUpdateTypes": [
+        "minor"
+      ],
       "enabled": false
     }
   ]
