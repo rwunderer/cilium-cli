@@ -8,7 +8,7 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
+      "matchDepNames": [
         "cilium-cli"
       ],
       "automerge": true,
