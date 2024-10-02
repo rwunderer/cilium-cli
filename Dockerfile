@@ -4,7 +4,7 @@
 FROM alpine:3.20.3@sha256:beefdbd8a1da6d2915566fde36db9db0b524eb737fc57cd1367effd16dc0d06d as builder
 
 # renovate: datasource=github-releases depName=cilium-cli lookupName=cilium/cilium-cli
-ARG CLI_VERSION=v0.16.18
+ARG CLI_VERSION=v0.16.19
 ARG TARGETARCH
 ARG TARGETOS
 ARG TARGETVARIANT
