@@ -23,7 +23,7 @@ RUN IMAGE=cilium-${TARGETOS}-${TARGETARCH}.tar.gz && \
 #-------------------
 # Minimal image
 #-------------------
-FROM gcr.io/distroless/static-debian12:nonroot@sha256:188ddfb9e497f861177352057cb21913d840ecae6c843d39e00d44fa64daa51c AS cilium-cli-minimal
+FROM gcr.io/distroless/static-debian12:nonroot@sha256:627d6c5a23ad24e6bdff827f16c7b60e0289029b0c79e9f7ccd54ae3279fb45f AS cilium-cli-minimal
 
 COPY --from=builder /bin/cilium /bin/cilium
 
