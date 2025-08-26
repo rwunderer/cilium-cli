@@ -32,7 +32,7 @@ ENTRYPOINT ["/bin/cilium"]
 #-------------------
 # Debug image
 #-------------------
-FROM gcr.io/distroless/static-debian12:debug-nonroot@sha256:0895d6fc256a6938a60c87d92e1148eec0d36198bff9c5d3082e6a56db7756bd AS cilium-cli-debug
+FROM gcr.io/distroless/static-debian12:debug-nonroot@sha256:a855ba843839f3344272cb64183489d91c190af11bec454e5d17f341255944e1 AS cilium-cli-debug
 
 COPY --from=builder /bin/cilium /bin/cilium
 
