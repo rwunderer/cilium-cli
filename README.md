@@ -1,6 +1,8 @@
 [![GitHub license](https://img.shields.io/github/license/rwunderer/cilium-cli.svg)](https://github.com/rwunderer/cilium-cli/blob/main/LICENSE)
 <a href="https://renovatebot.com"><img alt="Renovate enabled" src="https://img.shields.io/badge/renovate-enabled-brightgreen.svg?style=flat-square"></a>
 
+***As a contribution to [unplug Trump](https://www.kuketz-blog.de/unplugtrump-mach-dich-digital-unabhaengig-von-trump-und-big-tech/) this repository has moved to [codeberg](https://codeberg.org/capercode/cilium-cli).***
+
 # cilium-cli
 Minimal Docker image with [Cilium command line utility](https://github.com/cilium/cilium-cli)
 
